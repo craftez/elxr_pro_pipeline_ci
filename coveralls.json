@@ -1,0 +1,12 @@
+{
+	"skip_files": [
+		"lib/elxr_pro_pipeline_ci/application.ex",
+		"lib/elxr_pro_pipeline_ci_web.ex",
+		"lib/elxr_pro_pipeline_ci_web/telemetry.ex",
+		"lib/elxr_pro_pipeline_ci_web/router.ex"
+	],
+	"coverage_options": {
+		"treat_no_relevant_lines_as_covered": true,
+		"minimum_coverage": 20
+	}
+}
