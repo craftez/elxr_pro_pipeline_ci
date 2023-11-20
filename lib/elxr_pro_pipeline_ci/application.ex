@@ -10,7 +10,8 @@ defmodule ElxrProPipelineCi.Application do
     children = [
       ElxrProPipelineCiWeb.Telemetry,
       ElxrProPipelineCi.Repo,
-      {DNSCluster, query: Application.get_env(:elxr_pro_pipeline_ci, :dns_cluster_query) || :ignore},
+      {DNSCluster,
+       query: Application.get_env(:elxr_pro_pipeline_ci, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: ElxrProPipelineCi.PubSub},
       # Start the Finch HTTP client for sending emails
       {Finch, name: ElxrProPipelineCi.Finch},

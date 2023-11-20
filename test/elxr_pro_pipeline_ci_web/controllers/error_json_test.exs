@@ -2,7 +2,9 @@ defmodule ElxrProPipelineCiWeb.ErrorJSONTest do
   use ElxrProPipelineCiWeb.ConnCase, async: true
 
   test "renders 404" do
-    assert ElxrProPipelineCiWeb.ErrorJSON.render("404.json", %{}) == %{errors: %{detail: "Not Found"}}
+    assert ElxrProPipelineCiWeb.ErrorJSON.render("404.json", %{}) == %{
+             errors: %{detail: "Not Found"}
+           }
   end
 
   test "renders 500" do
