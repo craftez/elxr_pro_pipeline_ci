@@ -35,3 +35,5 @@ elxr_pro_pipeline_ci-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# Mac Files
+.DS_Store
